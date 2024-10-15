@@ -1,0 +1,28 @@
+# Environment files
+env/
+.env
+
+# Build and distribution directories
+build/
+dist/
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# C extensions
+*.pyd
+
+# Packaging
+.Python
+*.egg-info/
+*.egg
+*.whl
+
+# PyInstaller
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
