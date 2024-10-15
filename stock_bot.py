@@ -89,7 +89,7 @@ class StockAnalyzer:
         
         analysis_result += f"RSI: {last_data['RSI']:.2f}\n"
         analysis_result += f"MACD: {last_data['MACD']:.2f}\n"
-        analysis_result += f"Signal Line: {last_data['Signal Line']:.2f}\n\n"
+        analysis_result += f"Sinyal Hattı: {last_data['Signal Line']:.2f}\n\n"
         
         if prediction > current_price:
             analysis_result += f"Tahmin:Hisse senedi şu kadar yükselebilir {((prediction/current_price)-1)*100:.2f}%\n"
@@ -122,7 +122,7 @@ class StockAnalyzerApp(QMainWindow):
         main_widget = QWidget()
         main_layout = QHBoxLayout()
         
-        # Left side - Stock list and search
+        # Sol kenar - Hisse listesi ve arama
         left_widget = QWidget()
         left_layout = QVBoxLayout()
         
@@ -140,7 +140,7 @@ class StockAnalyzerApp(QMainWindow):
         
         left_widget.setLayout(left_layout)
         
-        # Sağ taraf - Analiz sonuçları ve grafik
+        # Sağ kenar - Analiz sonuçları ve grafik
         right_widget = QWidget()
         right_layout = QVBoxLayout()
         
