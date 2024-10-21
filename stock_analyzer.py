@@ -205,6 +205,9 @@ class StockLoaderThread(QThread):
         
         self.finished.emit(nasdaq_stocks)
         
+        
+#! Deneysel Alan
+##############################################################################
 # class StockLoaderThread(QThread):
 #     finished = pyqtSignal(list)
 #     progress = pyqtSignal(int)
@@ -232,8 +235,8 @@ class StockLoaderThread(QThread):
 #             print("Alternatif kaynaktan yükleniyor...")
 
 #             try:
-#                 # Alternatif kaynak: S&P 500 hisselerini sağlayan bir API
-#                 url = "https://api.example.com/sp500"  # Bu URL'yi geçerli bir API ile değiştirin
+#                 # Alternatif kaynak: S&P 500 hisselerini saglayan API
+#                 url = "https://api.example.com/sp500"
 #                 response = requests.get(url)
 #                 data = response.json()
 #                 sp500_stocks = [stock['symbol'] for stock in data['data']]
@@ -248,7 +251,7 @@ class StockLoaderThread(QThread):
 #             self.progress.emit(int((i + 1) / total_stocks * 100))
         
 #         self.finished.emit(sp500_stocks)
-        
+##############################################################################        
 
 
 class StockAnalyzerApp(QMainWindow):
